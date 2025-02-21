@@ -1,4 +1,4 @@
-# Ejercicio 6: Sistema de Gestión de Vehículos
+# Ejercicio 7: Sistema de Gestión de Vehículos
 
 Crea una jerarquía de clases para modelar un sistema de vehículos:
 
