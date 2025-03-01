@@ -1,13 +1,20 @@
-# Ejercicio 7: Sistema de Gestión de Vehículos
+# Ejercicio 7: Sistema de Vehículos
 
-Crea una jerarquía de clases para modelar un sistema de vehículos:
+### Clases a implementar:
 
-1. Clase `Vehiculo` con atributos como `marca`, `modelo` y `año`.
-2. Subclases `Auto`, `Moto` y `Camion`, con atributos adicionales como `capacidadPasajeros`, `cilindrada`, `capacidadCarga`, respectivamente.
+- **Clase Base `Vehiculo`**
+    - Propiedades: `marca` (`String`), `modelo` (`String`), `capacidadCombustible` (`Int`).
+    - Método `mostrarInformacion()`.
+    - Método `calcularAutonomia()` (cada litro permite 10 km).
 
-Añade métodos como `acelerar()`, `frenar()` y `mostrarInformacion()`.
+- **Clase Derivada `Automovil` (hereda de `Vehiculo`)**
+    - Propiedad específica: `tipo` (`String`).
+    - Implementa `calcularAutonomia()` (los automóviles pueden hacer 100 km más).
 
-## Objetivos:
-- Practicar la especialización de clases.
-- Aplicar herencia y sobreescritura de métodos.
-- Familiarizarse con objetos de diferentes categorías.
+- **Clase Derivada `Motocicleta` (hereda de `Vehiculo`)**
+    - Propiedad específica: `cilindrada` (`Int`).
+    - Implementa `calcularAutonomia()` (las motos hacen 40 km menos).
+
+### Objetivo:
+
+Demostrar cómo se pueden crear clases derivadas de una superclase y cómo pueden extender o modificar su comportamiento.
